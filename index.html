@@ -1,94 +1,37 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    @keyframes aparecer {
-      to {
-        opacity: 1;
-      }
-    }
-    .petalos {
-      width: 80px;
-      height: 155px;
-      border-radius: 50%;
-      position: absolute;
-      left: 44%;
-      top: 20%;
-      background-color: yellow;
-      opacity: 0;
-      animation: aparecer 12s forwards;
-    }
-
-    .centro {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      position: absolute;
-      left: 44%;
-      top: 22%;
-      background-color: orange;
-      opacity: 0;
-      animation: aparecer 2s forwards;
-    }
-
-    .tallo {
-      position: absolute;
-      width: 20px;
-      height: 500px;
-      background: green;
-      left: 45%;
-      top: 25%;
-      margin-left: -10px;
-      opacity: 0;
-      animation: aparecer 4s forwards;
-
-    }
-
-    .hoja {
-      position: absolute;
-      width: 70px;
-      height: 200px;
-      border-radius: 50%;
-      background: green;
-      opacity: 0;
-      animation: aparecer 12s forwards;
-    }
-
-    .fondo {
-      background-color: black;
-    }
-
-    .texto h1 {
-      margin-top: 50px;
-      text-align: center;
-      color: white;
-
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
 </head>
+<body>
+    <div class="greetings">
 
-<body class="fondo">
-
-  </div>
-  <div Class="tallo" id="tallo"></div>
-  <script id="petalos">
-
-    for (let i = 0; i < 8; i++) {
-
-      let petal = document.createElement("div");
-      petal.classList.add("petalos");
-      petal.style.transform = `rotate(${i * 45}deg) translate(0, -100px)`;
-      document.body.appendChild(petal);
-    }
-  </script>
-  <div class="centro" id="cent"></div>
-  <div class="hoja" id="hoja" style="transform: rotate(60deg); left: 50%; top: 30%; margin-left: -50px;"></div>
-
-  <div class="texto">
-    <h1>ten para ti una flor amarilla espero que te guste </h1>
-  </div>
-
-
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti princesa !!</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="FLORES.html">Haga Clic</a>
+        </button>
+        
+    </div>
 </body>
-
 </html>
